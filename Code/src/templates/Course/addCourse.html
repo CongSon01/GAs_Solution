@@ -1,0 +1,23 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="btn-toolbar">
+    <a href="{{ url_for('listCourse') }}"><button class="btn btn-primary">Danh sách khóa học</button></a>
+</div>
+<form action="{{ url_for('addCourse') }}" method="POST">
+	<div class="form-group">
+	  <label for="exampleInputEmail1">Tên khóa học</label>
+	  <input name="name" type="text" class="form-control" placeholder="Tên khóa học">
+	</div>
+    <label for="exampleFormControlSelect1">Chọn giảng viên</label>
+    <select name="instructor_id" class="form-control" id="exampleFormControlSelect1">
+    {% for instructor in instructors %}
+    <option value= "{{instructor.id}}" SELECTED>{{instructor.professor}}</option>"
+     {% endfor %}
+    </select>
+	<div class="form-group">
+	  <label for="exampleInputPassword1">Số lượng sinh viên</label>
+	  <input name="max_number_of_students" type="text" class="form-control" placeholder="Số lượng sinh viên">
+	</div>
+	<button type="submit" class="btn btn-primary">Tạo khoá học</button>
+  </form>
+{% endblock %}

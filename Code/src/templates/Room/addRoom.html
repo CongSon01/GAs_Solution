@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="btn-toolbar">
+    <a href="{{ url_for('listRoom') }}"><button class="btn btn-primary">Danh sách phòng học</button></a>
+</div>
+<form action="{{ url_for('addRoom') }}" method="POST">
+	<div>
+		<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+		  <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+	</div>
+	<div class="form-group">
+	  <label for="exampleInputEmail1">Tên phòng học</label>
+	  <input id="name" name="name" type="text" class="form-control" placeholder="Tên phòng học">
+	</div>
+	<div class="form-group">
+	  <label for="exampleInputPassword1">Số lượng sinh viên</label>
+	  <input id="seat_capacity" name="seat_capacity" type="text" class="form-control" placeholder="Số lượng sinh viên">
+	</div>
+	<button type="submit" class="btn btn-primary" id="submit_addRoom">Tạo phòng</button>
+  </form>
+{% endblock %}

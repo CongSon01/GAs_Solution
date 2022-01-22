@@ -1,0 +1,25 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="btn-toolbar">
+    <a href="{{ url_for('addRoom') }}"><button class="btn btn-primary">Thêm phòng học</button></a>
+    <a href="{{ url_for('index') }}"><button class="btn btn-danger">Tạo lịch</button></a>
+</div>
+<div class="well">
+    <table class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>Phòng</th>
+          <th>Tôi đa sinh viên</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%  for Room in Rooms: %}
+        <tr>
+          <td>{{ Room.name }}</td>
+          <td>{{ Room.seat_capacity }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+,Shift,Day,Room,Course,Instructor,Department
+0,4-6,MON,H3.300,C++,Hanh Van,LANGUAGE
+1,7-9,MON,H2.101,Caculus 2,Thien Ha,MATH
+2,10-12,MON,H2.102,Badminton 1,So Khanh,PE
+3,4-6,TUE,H2.200,Python,Thao Nguyen,IT
+4,10-12,TUE,H2.100,Java,Thao Nguyen,IT
+5,13-15,TUE,H2.103,Web,Thao Nguyen,IT
+6,4-6,WED,H2.200,English 1,Ngan Giang,MATH
+7,4-6,WED,H3.200,Table Tennis,Hao Nam,PE
+8,7-9,WED,H1.103,Mordem Art 1,Thanh Tu,IT
+9,13-15,WED,H2.200,Table Tennis,So Khanh,ART
+10,13-15,WED,H3.200,Practical Anotomy,Hao Nam,PE
+11,7-9,THU,H3.300,Mordem Art 2,Thanh Tu,ART
+12,7-9,FRI,H1.100,Chinese,Ngan Giang,LANGUAGE
+13,13-15,SAT,H3.301,English 2,Thu Thuy,LANGUAGE
+14,13-15,SAT,H3.302,Practical Anotomy,Hao Nam,ART
